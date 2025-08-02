@@ -1,6 +1,6 @@
 export class ApiService {
     constructor() {
-      this.baseURL = 'https://intern-dashboard-4hcg.onrender.com';
+      this.baseURL = 'https://intern-dashboard-production-5588.up.railway.app';
       this.token = localStorage.getItem('accessToken');
     }
   
@@ -14,6 +14,7 @@ export class ApiService {
     }
   
     async request(endpoint, options = {}) {
+      console.log(this.baseURL)
       const url = `${this.baseURL}${endpoint}`;
       const config = {
         headers: {

@@ -32,10 +32,7 @@ app.use('/api/', limiter);
 // MongoDB Connection
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/intern-dashboard', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/intern-dashboard');
     console.log('🔗 MongoDB Connected Successfully');
   } catch (error) {
     console.error('❌ MongoDB connection failed:', error.message);
