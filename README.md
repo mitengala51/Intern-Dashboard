@@ -105,7 +105,7 @@ CLIENT_URL=http://localhost:5173
 **Start the backend server:**
 ```bash
 # Development mode with auto-restart
-npm run dev
+node server.js
 
 # Or production mode
 npm start
