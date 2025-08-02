@@ -1,6 +1,6 @@
 export class ApiService {
     constructor() {
-      this.baseURL = 'https://intern-dashboard-production-5588.up.railway.app';
+      this.baseURL = 'https://intern-dashboard-production-5588.up.railway.app/api';
       this.token = localStorage.getItem('accessToken');
     }
   
