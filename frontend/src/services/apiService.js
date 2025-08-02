@@ -1,6 +1,6 @@
 export class ApiService {
     constructor() {
-      this.baseURL = 'http://localhost:5000/api';
+      this.baseURL = 'https://intern-dashboard-4hcg.onrender.com';
       this.token = localStorage.getItem('accessToken');
     }
   
